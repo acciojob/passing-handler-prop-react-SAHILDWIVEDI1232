@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 const Selection = ({ applyColor }) => {
@@ -9,6 +8,7 @@ const Selection = ({ applyColor }) => {
 
   return (
     <div
+      data-testid="selection-box"
       className="fix-box"
       style={selectionStyle}
       onClick={() => applyColor(updateSelectionStyle)}
